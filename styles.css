@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: blueviolet;
+  --secondary-color: #46de28;
+  --primary-bgcolor: #f5f5f5;
+}
+/* header.php */
+nav {
+  background-color: var(--primary-bgcolor);
+  padding: 0 10vw;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul a {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul a:hover {
+  color: var(--secondary-color);
+}
+
+/* main */
+
+.main {
+  padding: 2vh 10vw;
+}
+
+.popular {
+  margin: 5px 0;
+}
+
+.popular > h1 {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.popular__blogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogCard {
+  background-color: var(--primary-bgcolor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 370px;
+  width: 270px;
+}
+
+.blogCard > div:not(:first-child) {
+  margin: 5px 10px;
+}
+
+.blogCard__img {
+  width: 100%;
+  height: 50%;
+}
+
+.blogCard__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.blogCard__contentCategory {
+  background-color: var(--primary-color);
+  color: var(--primary-bgcolor);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+.blogCard__contentTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.blogCard__contentSummary {
+  font-size: 0.9rem;
+}
+
+.blogCard__contentBottom {
+  display: flex;
+  align-items: center;
+}
+
+.blogCard__contentBottom > img {
+  width: 50px;
+  height: 50px;
+}
+.blogCard__contentBottomRight {
+  margin-left: 5px;
+}
+.blogCard__contentBottomRight > p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.blogCard__contentBottomRight > span {
+  font-size: 0.9rem;
+  color: rgb(75, 75, 75);
+}
+
+/* Popular Blogs */
+
+/* footer.php */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-bgcolor);
+  color: var(--primary-color);
+}
