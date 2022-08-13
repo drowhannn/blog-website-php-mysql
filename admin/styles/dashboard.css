@@ -1,0 +1,125 @@
+.dashboard {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 0;
+}
+
+.dashboard__msg {
+  font-family: helveticaFontMedium;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.dashboard__msg.error {
+  color: red;
+}
+.dashboard__msg.success {
+  color: green;
+}
+
+.dashboard::-webkit-scrollbar {
+  display: none;
+}
+.dashboard__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--bg-nav);
+}
+
+.dashboard__header > h1 {
+  font-size: 2rem;
+  font-family: helveticaFontBold;
+  color: var(--text-darkorange);
+}
+.dashboard__header > a {
+  font-size: 1.1rem;
+  font-family: helveticaFontBold;
+  color: var(--bg-white);
+  cursor: pointer;
+  background: var(--text-darkorange);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+.dashboard__header > a:hover {
+  background-color: var(--bg-nav);
+}
+
+.table {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.table__row {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.table__head {
+  font-size: 1.2rem;
+  font-family: helveticaFontBold;
+  flex: 1;
+  text-align: center;
+  background-color: var(--text-darkorange);
+}
+
+.table__head.action {
+  background-color: var(--bg-nav);
+  color: var(--bg-white);
+}
+
+.table__data {
+  flex: 1;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--text-orange);
+  margin-top: 3px;
+  font-family: Poppins;
+  font-size: 0.8rem;
+}
+.table__data.action {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.table__head {
+  padding: 5px;
+  height: 50px;
+}
+.table__data {
+  padding: 5px;
+  height: 75px;
+  text-overflow: ellipsis;
+  color: var(--bg-white);
+}
+
+.table__data .edit {
+  background-color: var(--bg-green);
+}
+.table__data .delete {
+  background-color: red;
+}
+
+.table__data > a {
+  width: 100%;
+  margin: 1px;
+
+  padding: 3px;
+  height: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.table__data > a:hover {
+  background-color: var(--bg-nav);
+}

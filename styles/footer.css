@@ -1,0 +1,10 @@
+/* footer.php */
+footer {
+  display: grid;
+  place-content: center;
+  padding: 3rem 0;
+  background-color: var(--text-black);
+  color: var(--bg-white);
+  font-family: helveticaFont;
+  min-height: 15vh;
+}

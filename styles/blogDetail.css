@@ -1,0 +1,19 @@
+.blogDetail {
+  padding: 2rem 10vw;
+  min-height: 75vh;
+}
+
+.blogDetail > h1 {
+  margin-bottom: 1rem;
+}
+
+.blogDetail > img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.blogDetail > p {
+  font-size: 1.5rem;
+  font-family: Poppins, "sans-serif";
+}

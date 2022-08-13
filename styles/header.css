@@ -1,0 +1,45 @@
+/* header.php */
+
+/* Nav bar */
+nav {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-nav);
+  padding: 0 10vw;
+  height: 15vh;
+  color: var(--bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__title {
+  font-size: 1.6rem;
+}
+
+.nav__title > a > span {
+  color: var(--text-orange);
+}
+
+.nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 50%;
+}
+
+.nav__items > li > a {
+  color: var(--bg-white);
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 300ms ease-in;
+}
+
+.nav__items > li > a:hover {
+  color: var(--text-orange);
+}
+
+.nav__items .fa-angle-down {
+  margin-left: 5px;
+}

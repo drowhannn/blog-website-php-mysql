@@ -1,0 +1,33 @@
+.sidebar {
+  width: 20vw;
+  height: 100vh;
+  background-color: var(--bg-nav);
+  color: var(--bg-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 2rem;
+}
+.sidebar > h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+.sidebar > h1 span {
+  color: var(--text-orange);
+}
+.sidebar > h1 sup {
+  font-size: 0.5rem;
+}
+.sidebar__options {
+  list-style: none;
+}
+.sidebar__option {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.sidebar__option.active {
+  color: var(--text-darkorange);
+}
+.sidebar__option:hover {
+  color: var(--text-darkorange);
+}
