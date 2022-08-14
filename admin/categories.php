@@ -52,7 +52,7 @@ if(isset($_SESSION['adminLogin'])){
                             <div class="table__data"><?php echo $row['categoryId']; ?></div>
                             <div class="table__data"><?php echo $row['categoryName']; ?></div>
                             <div class="table__data action">
-                                <a class="edit">Edit</a>
+                                <a class="edit" href="/blog/admin/editCategory.php?categoryId=<?php echo $row['categoryId']; ?>">Edit</a>
                                 <a class="delete" href="/blog/admin/delete.php?categoryId=<?php echo $row['categoryId']; ?>">Delete</a>
                             </div>
                         </div>

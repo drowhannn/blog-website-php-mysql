@@ -20,6 +20,8 @@ if(isset($_SESSION['adminLogin'])){
                     echo '<p class="dashboard__msg error">Error: Try Again!</p>';
                 }elseif($_GET['error']=="superadmin"){
                     echo '<p class="dashboard__msg error">Error: You cannot remove super admin!</p>';
+                }elseif($_GET['error']=="editsuperadmin"){
+                    echo '<p class="dashboard__msg error">Error: You cannot edit super admin!</p>';
                 }
             }elseif(isset($_GET['success'])){
                 if($_GET['success']=="true"){
@@ -57,11 +59,13 @@ if(isset($_SESSION['adminLogin'])){
                             <div class="table__data"><?php echo $row['userId']; ?></div>
                             <div class="table__data"><?php echo $row['username']; ?></div>
                             <div class="table__data"><?php echo $row['email']; ?></div>
-                            <div class="table__data"><?php echo $row['password']; ?></div>
+
+                            <div class="table__data"><?php if( $_SESSION['adminRole']=="Super Admin" || $row['role']=='Admin') echo $row['password']; else echo "********"; ?></div>
+
                             <div class="table__data"><?php echo $row['role']; ?></div>
                             <div class="table__data"><?php echo $row['avatar']; ?></div>
                             <div class="table__data action">
-                                <a class="edit">Edit</a>
+                                <a class="edit" href="/blog/admin/editUser.php?userId=<?php echo $row['userId'] ?>">Edit</a>
                                 <a class="delete" href="/blog/admin/delete.php?userId=<?php echo $row['userId'] ?>">Delete</a>
                             </div>
                         </div>

@@ -8,7 +8,7 @@ if(isset($_SESSION['adminLogin'])){
 
         include("../db/dbconnection.php");
 
-        $sql="INSERT into category values(null,'$category')";
+        $sql="INSERT into categories values(null,'$category')";
         try{
             $result=$conn->query($sql);
             header("Location: addNewCategory.php?success=true");

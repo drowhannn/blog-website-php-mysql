@@ -28,7 +28,7 @@ if(isset($_SESSION['adminLogin'])){
         ?>
         <div class="dashboard__header">
                 <h1>Posts</h1>
-                <a>Add New Post</a>
+                <a href="/blog/admin/addNewPost.php">Add New Post</a>
             </div>
             <?php 
             include("../db/dbconnection.php");
@@ -64,7 +64,7 @@ if(isset($_SESSION['adminLogin'])){
                             <div class="table__data"><?php echo $row['categoryId']; ?></div>
                             <div class="table__data"><?php echo $row['userId']; ?></div>
                             <div class="table__data action">
-                                <a class="edit">Edit</a>
+                                <a class="edit" href="/blog/admin/editPost.php?postId=<?php echo $row['postId']?>">Edit</a>
                                 <a class="delete" href="/blog/admin/delete.php?postId=<?php echo $row['postId']; ?>">Delete</a>
                             </div>
                         </div>

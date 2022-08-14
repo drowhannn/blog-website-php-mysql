@@ -24,7 +24,7 @@ if(isset($_SESSION['adminLogin'])){
             ?>
             <div class="dashboard__header">
                 <h1>Add New User</h1>
-                <a href="">Cancel</a>
+                <a href="/blog/admin/users.php">Cancel</a>
                 
             </div>
             <form method="post" action="addUserValidate.php">
