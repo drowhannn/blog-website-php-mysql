@@ -123,3 +123,48 @@
 .table__data > a:hover {
   background-color: var(--bg-nav);
 }
+.dashboard > form > div {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.dashboard > form label {
+  font-size: 1.5rem;
+  font-family: helveticaFontMedium;
+  width: 200px;
+}
+
+.dashboard > form input {
+  font-size: 1.5rem;
+  width: 500px;
+  height: 40px;
+  outline: none;
+}
+.dashboard > form select {
+  font-size: 1.2rem;
+  width: 500px;
+  height: 40px;
+  outline: none;
+}
+.dashboard > form textarea {
+  font-size: 1.2rem;
+  width: 500px;
+  height: 150px;
+  outline: none;
+}
+.dashboard > form > button {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  font-family: helveticaFontBold;
+  cursor: pointer;
+  background-color: var(--text-darkorange);
+}
+
+.dashboard > form > button:hover {
+  background-color: var(--bg-nav);
+}

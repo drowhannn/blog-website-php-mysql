@@ -18,12 +18,22 @@ include('db/dbconnection.php');
      $row=$result->fetch_assoc();
         ?>
         <main class="blogDetail">
-            <h1 class="helBold"><?php echo $row['title'] ?></h1>
+            <div class="blogDetail__header">
+             <h1 class="helBold"><?php echo $row['title'] ?></h1>
+             <p class="helMed">
+                <?php echo "Posted by ".$row['username']." on ".$row['datePublished'];?>
+             </p>
+            </div>
             <img src=<?php echo $row['bannerImage'] ?> alt="banner image">
             <p><?php echo $row['description']?></p>
         </main>
 
+     
+
         <?php
+
+        $sql="UPDATE posts set views=views+1 where postId=$blogId ";
+        $result=$conn->query($sql);
      
  }else{
      echo '<h1 class="blogDetail">No blogs to show.</h1>';

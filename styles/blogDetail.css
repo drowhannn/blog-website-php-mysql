@@ -2,9 +2,16 @@
   padding: 2rem 10vw;
   min-height: 75vh;
 }
-
-.blogDetail > h1 {
+.blogDetail__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 1rem;
+}
+
+.blogDetail__header > p {
+  font-size: 1.2rem;
+  color: var(--text-gray);
 }
 
 .blogDetail > img {

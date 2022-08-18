@@ -4,7 +4,7 @@
 
     // Include header file
     $title="Home Page";
-    $activeNavItem="Home";
+    $activeNavItem="Trending";
     include('components/header.php');
 
     // Connect to the database
@@ -17,10 +17,10 @@
   
 
 <?php 
-$sql="SELECT postId,title,bannerImage,datePublished,DATE_FORMAT(datePublished, \"%d %b, %Y\") AS datePub,categories.categoryName,users.username,users.avatar from posts 
+$sql="SELECT postId,title,bannerImage,DATE_FORMAT(datePublished, \"%d %b, %Y\") AS datePublished,categories.categoryName,users.username,users.avatar from posts 
 join categories on posts.categoryId=categories.categoryId
 join users on posts.userId=users.userId
-order by datePublished desc
+order by views desc limit 9
 ";
 include('components/allblogs.php')
 ?>

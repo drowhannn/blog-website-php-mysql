@@ -14,7 +14,7 @@
             </div>
             <div class="blogCard__contentBottomDate">
                 <i class="far fa-clock"></i>
-                <p><?php echo $row['datePublished'] ?></p>
+                <p><?php echo $row['datePub'] ?></p>
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
     <footer>
-        All Rights Reserved &copy; Rohan Dhimal
+        All Rights Reserved &copy; CITE Project IV
     </footer>
 </body>
 </html>

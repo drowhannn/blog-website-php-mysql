@@ -4,7 +4,7 @@
 nav {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-nav);
-  padding: 0 10vw;
+  padding: 0 15vw;
   height: 15vh;
   color: var(--bg-white);
   display: flex;
@@ -25,7 +25,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  width: 50%;
+  width: 20%;
 }
 
 .nav__items > li > a {
@@ -34,6 +34,9 @@ nav {
   font-weight: bold;
   text-decoration: none;
   transition: 300ms ease-in;
+}
+.nav__items > li.active > a {
+  color: var(--text-orange);
 }
 
 .nav__items > li > a:hover {
