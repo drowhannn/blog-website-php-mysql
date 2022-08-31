@@ -15,7 +15,7 @@
   <body>
     <nav>
      <h1 class="nav__title">
-     <a href="/blog">The<span>Blog</span></a> 
+     <a href="/blog">Hamro<span>Sansar</span></a> 
      </h1>
      <ul class="nav__items">
       <li class="nav__item <?php if($activeNavItem=="Home") echo "active"; ?>"><a href="/blog">Home</a></li>
